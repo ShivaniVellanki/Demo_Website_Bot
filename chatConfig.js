@@ -1,8 +1,4 @@
-// Wait for analytics to be available
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Analytics object before getting:', window.analytics);
-    let insideData = getAnalytics();
-    console.log('Analytics data retrieved:', insideData);
+
     
 var chatConfig = KoreChatSDK.chatConfig;
 var chatWindow = KoreChatSDK.chatWindow;
@@ -20,4 +16,4 @@ var chatWindowInstance = new chatWindow(chatConfig);
 
 chatWindowInstance.show(chatConfig);
     new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig);
-});
+
